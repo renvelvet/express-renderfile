@@ -3,7 +3,7 @@ const app = express();
 
 const path = require("path");
 const router = express.Router();
-const PORT = proccess.env.PORT || 5001;
+const PORT = process.env.PORT || 5001;
 
 app.use(express.static("views"));
 
