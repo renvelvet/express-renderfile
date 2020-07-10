@@ -1,0 +1,49 @@
+.navbar {
+  padding: 0;
+  background-color: black;
+}
+ul {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  flex-direction: row !important;
+  justify-content: end !important;
+}
+.nav-item {
+  display: block;
+  margin: auto 10px;
+}
+.nav-link {
+  color: antiquewhite;
+  text-decoration: none;
+  padding: 8px !important;
+}
+.nav-link:hover {
+  background-color: brown;
+  color: aliceblue;
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/background.jpg");
+}
+@font-face {
+  font-family: "Title";
+  src: url("../assets/Tomatoes-O8L8.ttf");
+}
+@font-face {
+  font-family: "About";
+  src: url("../assets/RollenaDemo-GO6oA.ttf");
+}
+.navbar a {
+  font-family: "About";
+  font-size: larger;
+}
+.background h1 {
+  position: relative;
+  text-align: center;
+  color: antiquewhite;
+  top: 2em;
+  font-size: 5em;
+  background-color: rgba(184, 59, 94, 0.5);
+  font-family: "Title";
+}
