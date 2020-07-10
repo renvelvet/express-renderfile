@@ -6,14 +6,14 @@ const router = express.Router();
 const PORT = process.env.PORT || 5001;
 
 app.use(express.static("views"));
+app.use("/", router);
 
-// router.get("/", (req,res) => )
-app.get("/", (req, res) => {
-  res.send("hello");
+router.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname + "/views/index.html"));
 });
 
-app.get("/products", (req, res) => {
-  res.sendFile(path.join(__dirname + "/views/products.html"));
+router.get("/about", (req, res) => {
+  res.sendFile(path.join(__dirname + "/views/about.html"));
 });
 
 app.listen(PORT, () => {
