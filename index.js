@@ -1,11 +1,13 @@
 const express = require("express");
 const app = express();
 
-const PORT = 5001;
 const path = require("path");
+const router = express.Router();
+const PORT = proccess.env.PORT || 5001;
 
 app.use(express.static("views"));
 
+// router.get("/", (req,res) => )
 app.get("/", (req, res) => {
   res.send("hello");
 });
