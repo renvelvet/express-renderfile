@@ -1,0 +1,47 @@
+.header {
+  width: 100vw;
+  background-color: #b83b5e;
+  height: 35vh;
+}
+@font-face {
+  font-family: "About";
+  src: url("../assets/RollenaDemo-GO6oA.ttf");
+}
+h2,
+h1,
+.navbar a {
+  font-family: "About";
+}
+.navbar a {
+  font-size: larger;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.profile {
+  position: relative;
+  top: -100px;
+  margin: auto 5em;
+}
+img {
+  border-radius: 50%;
+  margin: 1em;
+}
+.sosmed {
+  margin: 1em 10em;
+}
+.sosmed-logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30em;
+  margin-top: 1em;
+}
+.sosmed-logo i {
+  font-size: 3em;
+}
